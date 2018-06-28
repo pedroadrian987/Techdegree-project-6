@@ -30,7 +30,7 @@ $('#video_player').mediaelementplayer({
   videoVolume: "vertical",
   alwaysShowControls: true,
   success: function(player) {
-    $("span").click(function() {
+    $("span").click(function(event) {
       var ident = String(event.target.id);
       var conct = "#" + ident;
       var indx = spanCode.indexOf(conct);
